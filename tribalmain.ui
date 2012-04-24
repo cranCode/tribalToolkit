@@ -597,7 +597,7 @@
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>320</y>
+        <y>310</y>
         <width>50</width>
         <height>15</height>
        </rect>
@@ -616,7 +616,7 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>318</y>
+        <y>310</y>
         <width>16</width>
         <height>16</height>
        </rect>
@@ -632,7 +632,7 @@
       <property name="geometry">
        <rect>
         <x>195</x>
-        <y>320</y>
+        <y>310</y>
         <width>50</width>
         <height>15</height>
        </rect>
@@ -645,7 +645,7 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>353</y>
+        <y>340</y>
         <width>16</width>
         <height>16</height>
        </rect>
@@ -661,7 +661,7 @@
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>355</y>
+        <y>340</y>
         <width>121</width>
         <height>16</height>
        </rect>
@@ -680,7 +680,7 @@
       <property name="geometry">
        <rect>
         <x>195</x>
-        <y>355</y>
+        <y>340</y>
         <width>50</width>
         <height>15</height>
        </rect>
@@ -1040,8 +1040,8 @@
      <widget class="QLabel" name="imgChlop2">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>225</y>
+        <x>20</x>
+        <y>370</y>
         <width>16</width>
         <height>16</height>
        </rect>
@@ -1056,8 +1056,8 @@
      <widget class="QLabel" name="intZajetePrzezWojsko">
       <property name="geometry">
        <rect>
-        <x>535</x>
-        <y>227</y>
+        <x>195</x>
+        <y>370</y>
         <width>50</width>
         <height>15</height>
        </rect>
@@ -1069,8 +1069,8 @@
      <widget class="QLabel" name="textZajetePrzezWojsko">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>227</y>
+        <x>50</x>
+        <y>370</y>
         <width>121</width>
         <height>16</height>
        </rect>
@@ -1089,7 +1089,7 @@
       <property name="geometry">
        <rect>
         <x>477</x>
-        <y>280</y>
+        <y>290</y>
         <width>201</width>
         <height>111</height>
        </rect>
@@ -1111,11 +1111,11 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="imgZagrodaBig">
       <property name="geometry">
        <rect>
         <x>350</x>
-        <y>280</y>
+        <y>290</y>
         <width>151</width>
         <height>111</height>
        </rect>
@@ -1125,6 +1125,258 @@
       </property>
       <property name="pixmap">
        <pixmap>images/farm.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textKoszt">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>226</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Koszt:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgWood">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>225</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/resources/wood.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgClay">
+      <property name="geometry">
+       <rect>
+        <x>493</x>
+        <y>225</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/resources/clay.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgIron">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>223</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/resources/iron.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="intClay">
+      <property name="geometry">
+       <rect>
+        <x>512</x>
+        <y>226</y>
+        <width>66</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>999.999</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="intIronj">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>226</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>999.999</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="intWood">
+      <property name="geometry">
+       <rect>
+        <x>429</x>
+        <y>226</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>999.999</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="intAtak">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>267</y>
+        <width>50</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>999.999</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgAtak">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>267</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/attack/att.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgObrona">
+      <property name="geometry">
+       <rect>
+        <x>441</x>
+        <y>267</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/attack/def.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgObronaKaw">
+      <property name="geometry">
+       <rect>
+        <x>511</x>
+        <y>267</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/attack/def_cav.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgObronaLuk">
+      <property name="geometry">
+       <rect>
+        <x>581</x>
+        <y>267</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/attack/def_archer.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="intObrona">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>267</y>
+        <width>50</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>999.999</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="intObronaKaw">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>267</y>
+        <width>50</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>999.999</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="intObronaLuk">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>267</y>
+        <width>50</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>999.999</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -1189,11 +1441,6 @@
     <bool>false</bool>
    </property>
   </widget>
-  <action name="actionExit">
-   <property name="text">
-    <string>Exit</string>
-   </property>
-  </action>
   <action name="actionZakoncz">
    <property name="text">
     <string>Zakończ</string>
