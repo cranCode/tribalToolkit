@@ -19,6 +19,7 @@ public:
 private slots:
 
     void liczPunkty(int budNum, int lvl);
+    void liczMiejscaZagrodaBud(int budNum, int lvl);
     // Konstruktory funkcji wywołujących liczPunkty() przy zmienieniu wartości inputa
     void on_Ratusz_valueChanged(int lvlRatusz);
     void on_Koszary_valueChanged(int lvlKoszary);

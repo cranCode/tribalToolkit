@@ -686,7 +686,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>5156</string>
+       <string/>
       </property>
      </widget>
      <widget class="QLabel" name="imgCK">
@@ -1063,7 +1063,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>19654</string>
+       <string/>
       </property>
      </widget>
      <widget class="QLabel" name="textZajetePrzezWojsko">
