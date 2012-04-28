@@ -20,6 +20,7 @@ private slots:
 
     void liczPunkty(int budNum, int lvl);
     void liczMiejscaZagrodaBud(int budNum, int lvl);
+    void liczWojo();
     // Konstruktory funkcji wywołujących liczPunkty() przy zmienieniu wartości inputa
     void on_Ratusz_valueChanged(int lvlRatusz);
     void on_Koszary_valueChanged(int lvlKoszary);
@@ -37,8 +38,25 @@ private slots:
     void on_Spichlerz_valueChanged(int lvlSpichlerz);
     void on_Schowek_valueChanged(int lvlSchowek);
     void on_Mur_valueChanged(int lvlMur);
+    void on_Piki_valueChanged();
+    void on_Miecze_valueChanged();
+    void on_Topy_valueChanged();
+    void on_Luki_valueChanged();
+    void on_Zwiady_valueChanged();
+    void on_LK_valueChanged();
+    void on_LucznicyK_valueChanged();
+    void on_CK_valueChanged();
+    void on_Tarany_valueChanged();
+    void on_Katasy_valueChanged();
+    void on_Rycek_valueChanged();
+    void on_Grubas_valueChanged();
+
+
+
 
     void on_checkBox_clicked(bool checked);
+
+
 
 private:
     Ui::tribalMain *ui;
