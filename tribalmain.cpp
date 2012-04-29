@@ -66,7 +66,7 @@ void tribalMain::liczMiejscaZagrodaBud(int budNum, int lvl)
                                            /* Schowek */ {2,0,1,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                            /* Mur */ {5,1,1,1,1,2,2,2,3,3,3,4,5,5,7,8,9,10,12,15,0,0,0,0,0,0,0,0,0,0}};
 
-    unsigned short miejscaBud = 0;
+    int miejscaBud = 0;
 
     for(int a=0; a<=lvl-1;a++)
     {
@@ -101,7 +101,7 @@ void tribalMain::liczWojo()
 
     int surki[3] = {0};
     int silaWoja[4] = {0};
-    unsigned short miejscaZagrodaWojo = 0;
+    int miejscaZagrodaWojo = 0;
 
     for(int a=0;a<=11;a++)
     {
