@@ -59,6 +59,12 @@ private slots:
 
 
 
+    void on_buttonMaxValue_released();
+
+    void on_buttonClearBud_released();
+
+    void on_buttonClearBud_2_released();
+
 private:
     Ui::tribalMain *ui;
 };

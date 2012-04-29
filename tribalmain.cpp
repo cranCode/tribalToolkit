@@ -215,3 +215,59 @@ QString tribalMain::kropkiInt(int n)
     return result;
 }
 
+
+void tribalMain::on_buttonMaxValue_released()
+{
+    ui->Ratusz->setValue(30);
+    ui->Koszary->setValue(25);
+    ui->Stajnia->setValue(20);
+    ui->Warsztat->setValue(25);
+    ui->Palac->setValue(3);
+    ui->Kuznia->setValue(20);
+    ui->Plac->setValue(1);
+    ui->Piedastal->setValue(1);
+    ui->Rynek->setValue(25);
+    ui->Tartak->setValue(30);
+    ui->Cegielnia->setValue(30);
+    ui->Huta->setValue(30);
+    ui->Zagroda->setValue(30);
+    ui->Spichlerz->setValue(30);
+    ui->Schowek->setValue(10);
+    ui->Mur->setValue(20);
+}
+
+void tribalMain::on_buttonClearBud_released()
+{
+    ui->Ratusz->setValue(0);
+    ui->Koszary->setValue(0);
+    ui->Stajnia->setValue(0);
+    ui->Warsztat->setValue(0);
+    ui->Palac->setValue(0);
+    ui->Kuznia->setValue(0);
+    ui->Plac->setValue(0);
+    ui->Piedastal->setValue(0);
+    ui->Rynek->setValue(0);
+    ui->Tartak->setValue(0);
+    ui->Cegielnia->setValue(0);
+    ui->Huta->setValue(0);
+    ui->Zagroda->setValue(0);
+    ui->Spichlerz->setValue(0);
+    ui->Schowek->setValue(0);
+    ui->Mur->setValue(0);
+}
+
+void tribalMain::on_buttonClearBud_2_released()
+{
+    ui->Piki->setValue(0);
+    ui->Miecze->setValue(0);
+    ui->Topy->setValue(0);
+    ui->Luki->setValue(0);
+    ui->Zwiady->setValue(0);
+    ui->LK->setValue(0);
+    ui->LucznicyK->setValue(0);
+    ui->CK->setValue(0);
+    ui->Tarany->setValue(0);
+    ui->Katasy->setValue(0);
+    ui->Rycek->setValue(0);
+    ui->Grubas->setValue(0);
+}
