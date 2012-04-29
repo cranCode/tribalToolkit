@@ -39,7 +39,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <property name="usesScrollButtons">
      <bool>false</bool>
@@ -47,24 +47,8 @@
     <property name="tabsClosable">
      <bool>false</bool>
     </property>
-    <widget class="QWidget" name="synchronizatorAtakowTab">
-     <attribute name="title">
-      <string>synchronizatorAtaków</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="kalkulatorKontryTab">
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <attribute name="title">
-      <string>kalkulatorKontry</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="pomocnikRektrutantaTab">
-     <attribute name="title">
-      <string>pomocnikRektrutanta</string>
-     </attribute>
-    </widget>
+    
+    
     <widget class="QWidget" name="kalkulatorZagrodyTab">
      <property name="enabled">
       <bool>true</bool>
@@ -1382,36 +1366,10 @@
     </widget>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>700</width>
-     <height>23</height>
-    </rect>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizeGripEnabled">
+    <bool>false</bool>
    </property>
-   <widget class="QMenu" name="menuMenu">
-    <property name="title">
-     <string>Menu</string>
-    </property>
-    <addaction name="actionKonfiguracja"/>
-    <addaction name="separator"/>
-    <addaction name="separator"/>
-    <addaction name="separator"/>
-    <addaction name="separator"/>
-    <addaction name="actionZakoncz"/>
-   </widget>
-   <widget class="QMenu" name="menuPomoc">
-    <property name="title">
-     <string>Pomoc</string>
-    </property>
-    <addaction name="actionAutorzy_2"/>
-    <addaction name="actionStrona_WWW_2"/>
-    <addaction name="actionWspom_Projekt"/>
-   </widget>
-   <addaction name="menuMenu"/>
-   <addaction name="menuPomoc"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <property name="enabled">
@@ -1435,11 +1393,6 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar">
-   <property name="sizeGripEnabled">
-    <bool>false</bool>
-   </property>
   </widget>
   <action name="actionZakoncz">
    <property name="text">
