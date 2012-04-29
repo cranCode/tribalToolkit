@@ -40,7 +40,7 @@ void tribalMain::liczPunkty(int budNum, int lvl)
         sumaPunktow += aktualnePunkty[b];
     }
 
-    ui->Punkty->setNum(sumaPunktow);
+    ui->Punkty->setText(kropkiInt(sumaPunktow));
     liczMiejscaZagrodaBud(budNum, lvl);
 }
 unsigned short miejscaZagrodaBud[18] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
@@ -79,7 +79,7 @@ void tribalMain::liczMiejscaZagrodaBud(int budNum, int lvl)
     {
         sumaZagrodaBud += miejscaZagrodaBud[n];
     }
-    ui->ZajetePrzezBudynki->setNum(sumaZagrodaBud);
+    ui->ZajetePrzezBudynki->setText(kropkiInt(sumaZagrodaBud));
     liczWojo();
 }
 void tribalMain::liczWojo()
@@ -118,16 +118,16 @@ void tribalMain::liczWojo()
 
      }
 
-    ui->Wood->setNum(surki[0]);
-    ui->Clay->setNum(surki[1]);
-    ui->Iron->setNum(surki[2]);
+    ui->Wood->setText(kropkiInt(surki[0]));
+    ui->Clay->setText(kropkiInt(surki[1]));
+    ui->Iron->setText(kropkiInt(surki[2]));
 
-    ui->ZajetePrzezWojsko->setNum(miejscaZagrodaWojo);
+    ui->ZajetePrzezWojsko->setText(kropkiInt(miejscaZagrodaWojo));
 
-    ui->Atak->setNum(silaWoja[0]);
-    ui->Obrona->setNum(silaWoja[1]);
-    ui->ObronaKaw->setNum(silaWoja[2]);
-    ui->ObronaLuk->setNum(silaWoja[3]);
+    ui->Atak->setText(kropkiInt(silaWoja[0]));
+    ui->Obrona->setText(kropkiInt(silaWoja[1]));
+    ui->ObronaKaw->setText(kropkiInt(silaWoja[2]));
+    ui->ObronaLuk->setText(kropkiInt(silaWoja[3]));
 
     // Suma Zagrody
 
@@ -139,10 +139,14 @@ void tribalMain::liczWojo()
 
     if(zagrodaChecked) {pojemnoscZagrody = (pojemnoscZagrody*0.10)+pojemnoscZagrody;}
 
-    QString textZagroda = QString::number(sumaZagrody)+"/"+QString::number(pojemnoscZagrody);
-
-    ui->stringZagrodaBilans->setText(textZagroda);
-
+    if(sumaZagrody>pojemnoscZagrody)
+    {
+        ui->stringZagrodaBilans->setText("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Droid Sans'; font-size:15pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ff0000;\">"+QString::number(sumaZagrody)+"/"+QString::number(pojemnoscZagrody)+"</span></p></body></html>");
+    }
+    else
+    {
+        ui->stringZagrodaBilans->setText(QString::number(sumaZagrody)+"/"+QString::number(pojemnoscZagrody));
+    }
 
 }
 
@@ -190,5 +194,24 @@ void tribalMain::on_checkBox_clicked(bool checked)
     }
     liczWojo();
 }
+QString tribalMain::kropkiInt(int n)
+{
+    QString nString = QString::number(n);
+    QString result = nString;
 
+    unsigned short miejscaKropek[3] = {0};
+    int b = 0;
+    //Zapisuje do tablicy lokalizacje kropek
+    for(int a=(nString.length()-3),b=0;a>0;a=(a-3),b++)
+    {
+        miejscaKropek[b] = a;
+    }
+    //Wstawia kropki w podane miejsca
+
+    if(miejscaKropek[0]!=0){result.insert(miejscaKropek[0], QString("."));}
+    if(miejscaKropek[1]!=0){result.insert(miejscaKropek[1], QString("."));}
+    if(miejscaKropek[2]!=0){result.insert(miejscaKropek[2], QString("."));}else{b=b;}
+
+    return result;
+}
 

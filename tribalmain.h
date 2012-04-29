@@ -55,6 +55,7 @@ private slots:
 
 
     void on_checkBox_clicked(bool checked);
+    QString kropkiInt(int n);
 
 
 
