@@ -63,7 +63,11 @@ private slots:
 
     void on_buttonClearBud_released();
 
-    void on_buttonClearBud_2_released();
+    void on_buttonClearWojo_released();
+
+    void on_comboItems_currentIndexChanged(int index);
+
+    void resetDb(void);
 
 private:
     Ui::tribalMain *ui;

@@ -125,6 +125,9 @@
         <height>25</height>
        </rect>
       </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
       <property name="maximum">
        <number>30</number>
       </property>
@@ -334,6 +337,9 @@
       <property name="maximum">
        <number>1</number>
       </property>
+      <property name="value">
+       <number>1</number>
+      </property>
      </widget>
      <widget class="QLabel" name="imgPlac">
       <property name="geometry">
@@ -489,6 +495,9 @@
         <height>25</height>
        </rect>
       </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
       <property name="maximum">
        <number>30</number>
       </property>
@@ -502,8 +511,14 @@
         <height>25</height>
        </rect>
       </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
       <property name="maximum">
        <number>30</number>
+      </property>
+      <property name="value">
+       <number>1</number>
       </property>
      </widget>
      <widget class="QLabel" name="imgSchowek">
@@ -638,7 +653,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>21</string>
       </property>
      </widget>
      <widget class="QLabel" name="imgChlop">
@@ -686,7 +701,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>5</string>
       </property>
      </widget>
      <widget class="QLabel" name="imgCK">
@@ -1105,7 +1120,7 @@
        </font>
       </property>
       <property name="text">
-       <string>0/100</string>
+       <string>5/240</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -1405,17 +1420,100 @@
        <string>Wyczyść</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="buttonClearBud_2">
+     <widget class="QPushButton" name="buttonClearWojo">
       <property name="geometry">
        <rect>
-        <x>470</x>
+        <x>590</x>
         <y>294</y>
-        <width>91</width>
+        <width>81</width>
         <height>27</height>
        </rect>
       </property>
       <property name="text">
        <string>Wyczyść</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboItems">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>294</y>
+        <width>231</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Nie ma żadnego przedmiotu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Halabarda szwajcarska</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Długi miecz Urlicha</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wojowniczy topór Thorgarda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wielki łuk Edwarda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Luneta Kalida</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lanca Mieszka</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Flaga Baptysty</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Łuk reflekcyjny Khana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wekiera Carlosa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ogień olimpijski</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Berło Vasca</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>370</y>
+        <width>50</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
       </property>
      </widget>
     </widget>

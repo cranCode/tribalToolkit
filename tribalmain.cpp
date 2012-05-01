@@ -14,11 +14,26 @@ tribalMain::~tribalMain()
 {
     delete ui;
 }
-
-unsigned short aktualnePunkty[18] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+//Zmienne Globalne
+unsigned short aktualnePunkty[18] = {10,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,0,0};
 unsigned short sumaZagrodaBud = 0;
-unsigned short poziomZagrody = 0;
+unsigned short poziomZagrody = 1;
 bool zagrodaChecked = false;
+
+const unsigned short dbWojo[12][8] = { /* Pikinier */ {50,30,10,1,10,15,45,20},
+                                 /* Miecznik */ {30,30,70,1,25,50,15,40},
+                                 /* Topornik */ {60,30,40,1,40,10,5,10},
+                                 /* Łucznik */ {100,30,60,1,15,50,40,5},
+                                 /* Zwiadowca */ {50,50,20,2,0,2,1,2},
+                                 /* LK */ {125,100,250,4,130,30,40,30},
+                                 /* ŁK */ {250,100,150,5,120,40,30,50},
+                                 /* CK */ {200,150,600,6,150,200,80,180},
+                                 /* Taran */ {300,200,200,5,2,20,50,20},
+                                 /* Katas */ {320,400,100,8,100,100,50,100},
+                                 /* Rycerz */ {20,20,40,10,150,250,400,150},
+                                 /* Gruby */ {40000,50000,50000,100,30,100,50,100}};
+
+
 
 void tribalMain::liczPunkty(int budNum, int lvl)
 {
@@ -43,7 +58,7 @@ void tribalMain::liczPunkty(int budNum, int lvl)
     ui->Punkty->setText(kropkiInt(sumaPunktow));
     liczMiejscaZagrodaBud(budNum, lvl);
 }
-unsigned short miejscaZagrodaBud[18] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+unsigned short miejscaZagrodaBud[18] = {5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 void tribalMain::liczMiejscaZagrodaBud(int budNum, int lvl)
 {
@@ -84,19 +99,6 @@ void tribalMain::liczMiejscaZagrodaBud(int budNum, int lvl)
 }
 void tribalMain::liczWojo()
 {
-    unsigned short dbWojo[12][8] = { /* Pikinier */ {50,30,10,1,10,15,45,20},
-                                     /* Miecznik */ {30,30,70,1,25,50,15,40},
-                                     /* Topornik */ {60,30,40,1,40,10,5,10},
-                                     /* Łucznik */ {100,30,60,1,15,50,40,5},
-                                     /* Zwiadowca */ {50,50,20,2,0,2,1,2},
-                                     /* LK */ {125,100,250,4,130,30,40,30},
-                                     /* ŁK */ {250,100,150,5,120,40,30,50},
-                                     /* CK */ {200,150,600,6,150,200,80,180},
-                                     /* Taran */ {300,200,200,5,2,20,50,20},
-                                     /* Katas */ {320,400,100,8,100,100,50,100},
-                                     /* Rycerz */ {20,20,40,10,150,250,400,150},
-                                     /* Gruby */ {40000,50000,50000,100,30,100,50,100}};
-
     int wpisaneWojo[12] = {ui->Piki->value(),ui->Miecze->value(),ui->Topy->value(),ui->Luki->value(),ui->Zwiady->value(),ui->LK->value(),ui->LucznicyK->value(),ui->CK->value(),ui->Tarany->value(),ui->Katasy->value(),ui->Rycek->value(),ui->Grubas->value()};
 
     int surki[3] = {0};
@@ -256,7 +258,7 @@ void tribalMain::on_buttonClearBud_released()
     ui->Mur->setValue(0);
 }
 
-void tribalMain::on_buttonClearBud_2_released()
+void tribalMain::on_buttonClearWojo_released()
 {
     ui->Piki->setValue(0);
     ui->Miecze->setValue(0);
@@ -270,4 +272,67 @@ void tribalMain::on_buttonClearBud_2_released()
     ui->Katasy->setValue(0);
     ui->Rycek->setValue(0);
     ui->Grubas->setValue(0);
+}
+
+void tribalMain::on_comboItems_currentIndexChanged(int index)
+{
+    if(ui->Rycek->value()>=1)
+    {
+        switch(index)
+        {
+        case 1:
+
+
+        break;
+
+        case 2:
+
+        break;
+
+        case 3:
+
+        break;
+
+        case 4:
+
+        break;
+
+        case 5:
+
+        break;
+
+        case 6:
+
+        break;
+
+        case 7:
+
+        break;
+
+        case 8:
+
+        break;
+
+        case 9:
+
+        break;
+
+        case 10:
+
+        break;
+
+        case 11:
+
+        break;
+
+        default:
+
+        break;
+        }
+        liczWojo();
+    }
+}
+void tribalMain::resetDb(void)
+{
+
 }
