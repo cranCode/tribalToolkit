@@ -67,7 +67,7 @@ private slots:
 
     void on_comboItems_currentIndexChanged(int index);
 
-    void resetDb(void);
+    void resetDb();
 
 private:
     Ui::tribalMain *ui;

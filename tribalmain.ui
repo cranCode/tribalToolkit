@@ -1260,9 +1260,9 @@
      <widget class="QLabel" name="Atak">
       <property name="geometry">
        <rect>
-        <x>390</x>
+        <x>375</x>
         <y>267</y>
-        <width>50</width>
+        <width>60</width>
         <height>15</height>
        </rect>
       </property>
@@ -1276,7 +1276,7 @@
      <widget class="QLabel" name="imgAtak">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>355</x>
         <y>267</y>
         <width>16</width>
         <height>16</height>
@@ -1301,7 +1301,7 @@
      <widget class="QLabel" name="imgObrona">
       <property name="geometry">
        <rect>
-        <x>441</x>
+        <x>435</x>
         <y>267</y>
         <width>16</width>
         <height>16</height>
@@ -1317,7 +1317,7 @@
      <widget class="QLabel" name="imgObronaKaw">
       <property name="geometry">
        <rect>
-        <x>511</x>
+        <x>515</x>
         <y>267</y>
         <width>16</width>
         <height>16</height>
@@ -1333,7 +1333,7 @@
      <widget class="QLabel" name="imgObronaLuk">
       <property name="geometry">
        <rect>
-        <x>581</x>
+        <x>595</x>
         <y>267</y>
         <width>16</width>
         <height>16</height>
@@ -1349,9 +1349,9 @@
      <widget class="QLabel" name="Obrona">
       <property name="geometry">
        <rect>
-        <x>460</x>
+        <x>455</x>
         <y>267</y>
-        <width>50</width>
+        <width>60</width>
         <height>15</height>
        </rect>
       </property>
@@ -1365,9 +1365,9 @@
      <widget class="QLabel" name="ObronaKaw">
       <property name="geometry">
        <rect>
-        <x>530</x>
+        <x>535</x>
         <y>267</y>
-        <width>50</width>
+        <width>60</width>
         <height>15</height>
        </rect>
       </property>
@@ -1381,10 +1381,10 @@
      <widget class="QLabel" name="ObronaLuk">
       <property name="geometry">
        <rect>
-        <x>600</x>
+        <x>615</x>
         <y>267</y>
-        <width>50</width>
-        <height>15</height>
+        <width>60</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
@@ -1502,19 +1502,6 @@
         <string>Berło Vasca</string>
        </property>
       </item>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>370</y>
-        <width>50</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
      </widget>
     </widget>
    </widget>

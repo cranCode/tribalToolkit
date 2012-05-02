@@ -19,21 +19,21 @@ unsigned short aktualnePunkty[18] = {10,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,0,0};
 unsigned short sumaZagrodaBud = 0;
 unsigned short poziomZagrody = 1;
 bool zagrodaChecked = false;
+unsigned short tmpDbWojo[12][8] = { /* Pikinier */ {50,30,10,1,10,15,45,20},/* Miecznik */ {30,30,70,1,25,50,15,40},/* Topornik */ {60,30,40,1,40,10,5,10},/* Łucznik */ {100,30,60,1,15,50,40,5},/* Zwiadowca */ {50,50,20,2,0,2,1,2},/* LK */ {125,100,250,4,130,30,40,30},/* ŁK */ {250,100,150,5,120,40,30,50},/* CK */ {200,150,600,6,150,200,80,180},/* Taran */ {300,200,200,5,2,20,50,20},/* Katas */ {320,400,100,8,100,100,50,100},/* Rycerz */ {20,20,40,10,150,250,400,150},/* Gruby */ {40000,50000,50000,100,30,100,50,100}};
+const unsigned short dbWojo[12][8] = { /* 0 Pikinier */ {50,30,10,1,10,15,45,20},
+                                 /* 1 Miecznik */ {30,30,70,1,25,50,15,40},
+                                 /* 2 Topornik */ {60,30,40,1,40,10,5,10},
+                                 /* 3 Łucznik */ {100,30,60,1,15,50,40,5},
+                                 /* 4 Zwiadowca */ {50,50,20,2,0,2,1,2},
+                                 /* 5 LK */ {125,100,250,4,130,30,40,30},
+                                 /* 6 ŁK */ {250,100,150,5,120,40,30,50},
+                                 /* 7 CK */ {200,150,600,6,150,200,80,180},
+                                 /* 8 Taran */ {300,200,200,5,2,20,50,20},
+                                 /* 9 Katas */ {320,400,100,8,100,100,50,100},
+                                 /* 10 Rycerz */ {20,20,40,10,150,250,400,150},
+                                 /* 11 Gruby */ {40000,50000,50000,100,30,100,50,100}};
 
-const unsigned short dbWojo[12][8] = { /* Pikinier */ {50,30,10,1,10,15,45,20},
-                                 /* Miecznik */ {30,30,70,1,25,50,15,40},
-                                 /* Topornik */ {60,30,40,1,40,10,5,10},
-                                 /* Łucznik */ {100,30,60,1,15,50,40,5},
-                                 /* Zwiadowca */ {50,50,20,2,0,2,1,2},
-                                 /* LK */ {125,100,250,4,130,30,40,30},
-                                 /* ŁK */ {250,100,150,5,120,40,30,50},
-                                 /* CK */ {200,150,600,6,150,200,80,180},
-                                 /* Taran */ {300,200,200,5,2,20,50,20},
-                                 /* Katas */ {320,400,100,8,100,100,50,100},
-                                 /* Rycerz */ {20,20,40,10,150,250,400,150},
-                                 /* Gruby */ {40000,50000,50000,100,30,100,50,100}};
-
-
+//Startup Functions
 
 void tribalMain::liczPunkty(int budNum, int lvl)
 {
@@ -107,16 +107,16 @@ void tribalMain::liczWojo()
 
     for(int a=0;a<=11;a++)
     {
-        surki[0] += (dbWojo[a][0] * wpisaneWojo[a]);
-        surki[1] += (dbWojo[a][1] * wpisaneWojo[a]);
-        surki[2] += (dbWojo[a][2] * wpisaneWojo[a]);
+        surki[0] += (tmpDbWojo[a][0] * wpisaneWojo[a]);
+        surki[1] += (tmpDbWojo[a][1] * wpisaneWojo[a]);
+        surki[2] += (tmpDbWojo[a][2] * wpisaneWojo[a]);
 
-        miejscaZagrodaWojo += (dbWojo[a][3] * wpisaneWojo[a]);
+        miejscaZagrodaWojo += (tmpDbWojo[a][3] * wpisaneWojo[a]);
 
-        silaWoja[0] += (dbWojo[a][4] * wpisaneWojo[a]);
-        silaWoja[1] += (dbWojo[a][5] * wpisaneWojo[a]);
-        silaWoja[2] += (dbWojo[a][6] * wpisaneWojo[a]);
-        silaWoja[3] += (dbWojo[a][7] * wpisaneWojo[a]);
+        silaWoja[0] += (tmpDbWojo[a][4] * wpisaneWojo[a]);
+        silaWoja[1] += (tmpDbWojo[a][5] * wpisaneWojo[a]);
+        silaWoja[2] += (tmpDbWojo[a][6] * wpisaneWojo[a]);
+        silaWoja[3] += (tmpDbWojo[a][7] * wpisaneWojo[a]);
 
      }
 
@@ -272,6 +272,7 @@ void tribalMain::on_buttonClearWojo_released()
     ui->Katasy->setValue(0);
     ui->Rycek->setValue(0);
     ui->Grubas->setValue(0);
+    ui->comboItems->setCurrentIndex(0);
 }
 
 void tribalMain::on_comboItems_currentIndexChanged(int index)
@@ -281,58 +282,113 @@ void tribalMain::on_comboItems_currentIndexChanged(int index)
         switch(index)
         {
         case 1:
-
-
+            resetDb();
+            tmpDbWojo[0][4]*=1.3;
+            tmpDbWojo[0][5]*=1.2;
+            tmpDbWojo[0][6]*=1.2;
+            tmpDbWojo[0][7]*=1.2;
         break;
 
         case 2:
+            resetDb();
+            tmpDbWojo[1][4]*=1.4;
+            tmpDbWojo[1][5]*=1.3;
+            tmpDbWojo[1][6]*=1.3;
+            tmpDbWojo[1][7]*=1.3;
 
         break;
 
         case 3:
+            resetDb();
+            tmpDbWojo[2][4]*=1.4;
+            tmpDbWojo[2][5]*=1.3;
+            tmpDbWojo[2][6]*=1.3;
+            tmpDbWojo[2][7]*=1.3;
 
         break;
 
         case 4:
+            resetDb();
+            tmpDbWojo[3][4]*=1.3;
+            tmpDbWojo[3][5]*=1.2;
+            tmpDbWojo[3][6]*=1.2;
+            tmpDbWojo[3][7]*=1.2;
 
         break;
 
         case 5:
+            resetDb();
+            tmpDbWojo[4][4]*=1.3;
+            tmpDbWojo[4][5]*=1.2;
+            tmpDbWojo[4][6]*=1.2;
+            tmpDbWojo[4][7]*=1.2;
 
         break;
 
         case 6:
+            resetDb();
+            tmpDbWojo[5][4]*=1.3;
+            tmpDbWojo[5][5]*=1.2;
+            tmpDbWojo[5][6]*=1.2;
+            tmpDbWojo[5][7]*=1.2;
 
         break;
 
         case 7:
+            resetDb();
+            tmpDbWojo[7][4]*=1.3;
+            tmpDbWojo[7][5]*=1.2;
+            tmpDbWojo[7][6]*=1.2;
+            tmpDbWojo[7][7]*=1.2;
 
         break;
 
         case 8:
+            resetDb();
+            tmpDbWojo[6][4]*=1.3;
+            tmpDbWojo[6][5]*=1.2;
+            tmpDbWojo[6][6]*=1.2;
+            tmpDbWojo[6][7]*=1.2;
 
         break;
 
         case 9:
-
+            resetDb();
+            tmpDbWojo[8][4]*=2;
         break;
 
         case 10:
+            resetDb();
+            tmpDbWojo[9][4]*=2;
+            tmpDbWojo[9][5]*=10;
+            tmpDbWojo[9][6]*=10;
+            tmpDbWojo[9][7]*=10;
 
         break;
 
         case 11:
+            resetDb();
+            tmpDbWojo[11][4]*=1.3;
+            tmpDbWojo[11][5]*=1.2;
+            tmpDbWojo[11][6]*=1.2;
+            tmpDbWojo[11][7]*=1.2;
 
         break;
 
         default:
-
+            resetDb();
         break;
         }
         liczWojo();
     }
 }
-void tribalMain::resetDb(void)
+void tribalMain::resetDb()
 {
-
+    for(int n=0;n<=12;n++)
+    {
+        for(int m=0;m<=8;m++)
+        {
+            tmpDbWojo[n][m]=dbWojo[n][m];
+        }
+    }
 }
