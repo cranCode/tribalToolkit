@@ -1566,8 +1566,16 @@
    </property>
   </widget>
   <action name="actionZakoncz">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/icons/light/16_close.png</normaloff>
+     <activeoff>images/icons/dark/16_close.png</activeoff>images/icons/light/16_close.png</iconset>
+   </property>
    <property name="text">
-    <string>Zakończ</string>
+    <string>Zakończ CTRL+E</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
    </property>
   </action>
   <action name="actionKonfiguracja">
@@ -1577,21 +1585,41 @@
    <property name="checked">
     <bool>false</bool>
    </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>images/icons/light/16_settings.png</normaloff>
+     <activeoff>images/icons/dark/16_settings.png</activeoff>images/icons/light/16_settings.png</iconset>
+   </property>
    <property name="text">
     <string>Konfiguracja</string>
    </property>
   </action>
   <action name="actionAutorzy_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/icons/light/16_users.png</normaloff>
+     <activeoff>images/icons/dark/16_users.png</activeoff>images/icons/light/16_users.png</iconset>
+   </property>
    <property name="text">
     <string>Autorzy</string>
    </property>
   </action>
   <action name="actionStrona_WWW_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/icons/light/16_home.png</normaloff>
+     <activeoff>images/icons/dark/16_home.png</activeoff>images/icons/light/16_home.png</iconset>
+   </property>
    <property name="text">
     <string>Strona WWW</string>
    </property>
   </action>
   <action name="actionWspom_Projekt">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/icons/light/16_info.png</normaloff>
+     <activeoff>images/icons/dark/16_info.png</activeoff>images/icons/light/16_info.png</iconset>
+   </property>
    <property name="text">
     <string>Wspomóż Projekt</string>
    </property>

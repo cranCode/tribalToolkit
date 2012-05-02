@@ -392,3 +392,9 @@ void tribalMain::resetDb()
         }
     }
 }
+
+void tribalMain::on_actionZakoncz_triggered()
+{
+    exit(1);
+}
+

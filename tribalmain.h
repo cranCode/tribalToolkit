@@ -69,6 +69,10 @@ private slots:
 
     void resetDb();
 
+    void on_actionZakoncz_triggered();
+
+
+
 private:
     Ui::tribalMain *ui;
 };
