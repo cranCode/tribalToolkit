@@ -8,6 +8,7 @@ tribalMain::tribalMain(QWidget *parent) :
     ui(new Ui::tribalMain)
 {
     ui->setupUi(this);
+    Autorzy = new AutorzyWindow;
 }
 
 tribalMain::~tribalMain()
@@ -149,7 +150,7 @@ void tribalMain::liczWojo()
     {
         ui->stringZagrodaBilans->setText(QString::number(sumaZagrody)+"/"+QString::number(pojemnoscZagrody));
     }
-
+    (ui->Rycek->value()==1)?comboStatus(true):comboStatus(false);
 }
 
 void tribalMain::on_Ratusz_valueChanged(int lvlRatusz) { liczPunkty(0,lvlRatusz); }
@@ -279,6 +280,14 @@ void tribalMain::on_comboItems_currentIndexChanged(int index)
 {
     if(ui->Rycek->value()>=1)
     {
+        ui->comboItems->setEnabled(true);
+    }
+    else
+    {
+        ui->comboItems->setEnabled(false);
+    }
+    if(ui->Rycek->value()>=1)
+    {
         switch(index)
         {
         case 1:
@@ -396,5 +405,15 @@ void tribalMain::resetDb()
 void tribalMain::on_actionZakoncz_triggered()
 {
     exit(1);
+}
+
+
+void tribalMain::on_actionAutorzy_2_triggered()
+{
+    Autorzy->show();
+}
+void tribalMain::comboStatus(bool status)
+{
+    ui->comboItems->setEnabled(status);
 }
 

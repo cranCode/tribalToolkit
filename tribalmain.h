@@ -2,6 +2,7 @@
 #define TRIBALMAIN_H
 
 #include <QMainWindow>
+#include "autorzywindow.h"
 
 
 namespace Ui {
@@ -11,6 +12,7 @@ class tribalMain;
 class tribalMain : public QMainWindow
 {
     Q_OBJECT
+
     
 public:
     explicit tribalMain(QWidget *parent = 0);
@@ -71,10 +73,14 @@ private slots:
 
     void on_actionZakoncz_triggered();
 
+    void comboStatus(bool status);
+
+    void on_actionAutorzy_2_triggered();
 
 
 private:
     Ui::tribalMain *ui;
+    AutorzyWindow* Autorzy;
 };
 
 #endif // TRIBALMAIN_H

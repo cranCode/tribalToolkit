@@ -11,8 +11,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        tribalmain.cpp
+        tribalmain.cpp \
+    autorzywindow.cpp
 
-HEADERS  += tribalmain.h
+HEADERS  += tribalmain.h \
+    autorzywindow.h
 
-FORMS    += tribalmain.ui
+FORMS    += tribalmain.ui \
+    autorzywindow.ui
