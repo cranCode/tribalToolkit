@@ -7,1506 +7,1468 @@
     <x>0</x>
     <y>0</y>
     <width>700</width>
-    <height>550</height>
+    <height>468</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>468</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>468</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>tribalToolkit</string>
+   <string>kalkulatorZagrody - by cranCode</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/icons/light/16_home.png</normaloff>images/icons/light/16_home.png</iconset>
   </property>
   <property name="layoutDirection">
    <enum>Qt::LeftToRight</enum>
   </property>
   <property name="tabShape">
-   <enum>QTabWidget::Rounded</enum>
+   <enum>QTabWidget::Triangular</enum>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTabWidget" name="tabWidget">
+   <widget class="QPushButton" name="buttonClearWojo">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>15</y>
-      <width>681</width>
-      <height>471</height>
+      <x>590</x>
+      <y>297</y>
+      <width>81</width>
+      <height>27</height>
      </rect>
     </property>
-    <property name="whatsThis">
+    <property name="text">
+     <string>Wyczyść</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgZagroda">
+    <property name="geometry">
+     <rect>
+      <x>241</x>
+      <y>148</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
      <string/>
     </property>
-    <property name="tabPosition">
-     <enum>QTabWidget::North</enum>
+    <property name="pixmap">
+     <pixmap>images/buildings/farm.png</pixmap>
     </property>
-    <property name="tabShape">
-     <enum>QTabWidget::Rounded</enum>
+   </widget>
+   <widget class="QSpinBox" name="Grubas">
+    <property name="geometry">
+     <rect>
+      <x>611</x>
+      <y>183</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
     </property>
-    <property name="currentIndex">
+    <property name="maximum">
+     <number>25</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="textZajetePrzezWojsko">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>403</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Zajęte przez wojsko:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Luki">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>183</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgTartak">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>228</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/wood.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboItems">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>297</y>
+      <width>231</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Nie ma żadnego przedmiotu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Halabarda szwajcarska</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Długi miecz Urlicha</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Wojowniczy topór Thorgarda</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Wielki łuk Edwarda</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Luneta Kalida</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Lanca Mieszka</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Flaga Baptysty</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Łuk reflekcyjny Khana</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Wekiera Carlosa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ogień olimpijski</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Berło Vasca</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="imgWarsztat">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>188</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/garage.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Zagroda">
+    <property name="geometry">
+     <rect>
+      <x>271</x>
+      <y>143</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgTarany">
+    <property name="geometry">
+     <rect>
+      <x>581</x>
+      <y>78</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/ram.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgHuta">
+    <property name="geometry">
+     <rect>
+      <x>241</x>
+      <y>113</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/iron.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>268</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10% Większa Zagroda</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Spichlerz">
+    <property name="geometry">
+     <rect>
+      <x>271</x>
+      <y>183</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>30</number>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Obrona">
+    <property name="geometry">
+     <rect>
+      <x>455</x>
+      <y>270</y>
+      <width>60</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgLucznik">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>188</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/archer.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Rycek">
+    <property name="geometry">
+     <rect>
+      <x>611</x>
+      <y>143</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ZajetePrzezWojsko">
+    <property name="geometry">
+     <rect>
+      <x>195</x>
+      <y>403</y>
+      <width>50</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgChlop">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>373</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/chlop.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgCK">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>188</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/heavy.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ObronaLuk">
+    <property name="geometry">
+     <rect>
+      <x>615</x>
+      <y>270</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgZagrodaBig">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>323</y>
+      <width>151</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/farm.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgAtak">
+    <property name="geometry">
+     <rect>
+      <x>355</x>
+      <y>270</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/attack/att.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgSpichlerz">
+    <property name="geometry">
+     <rect>
+      <x>241</x>
+      <y>188</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/storage.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgKatasy">
+    <property name="geometry">
+     <rect>
+      <x>581</x>
+      <y>113</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/catapult.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgMur">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>268</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/wall.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Piedastal">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>143</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Wood">
+    <property name="geometry">
+     <rect>
+      <x>429</x>
+      <y>229</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="textWojska">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>23</y>
+      <width>340</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Wojska</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Tarany">
+    <property name="geometry">
+     <rect>
+      <x>611</x>
+      <y>73</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Stajnia">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>143</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Kuznia">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>73</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgLucznikK">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>148</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/marcher.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgPiedestal">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>148</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/statue.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Schowek">
+    <property name="geometry">
+     <rect>
+      <x>271</x>
+      <y>223</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="textPunkty">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>343</y>
+      <width>50</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Punkty:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgRatusz">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>78</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/main.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgPiki">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>78</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/spear.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="textZagroda">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>373</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Zajęte przez budynki:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgMiecze">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>113</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/sword.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="CK">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>183</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Punkty">
+    <property name="geometry">
+     <rect>
+      <x>195</x>
+      <y>343</y>
+      <width>50</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>21</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgChlop2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>403</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/chlop.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Ratusz">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>73</y>
+      <width>41</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgKuznia">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>78</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/smith.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Huta">
+    <property name="geometry">
+     <rect>
+      <x>271</x>
+      <y>108</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Cegielnia">
+    <property name="geometry">
+     <rect>
+      <x>271</x>
+      <y>73</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Mur">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>263</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Palac">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>223</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
      <number>3</number>
     </property>
-    <property name="usesScrollButtons">
-     <bool>false</bool>
+   </widget>
+   <widget class="QLabel" name="textKoszt">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>229</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
     </property>
-    <property name="tabsClosable">
-     <bool>false</bool>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
-    <widget class="QWidget" name="synchronizatorAtakowTab">
-     <attribute name="title">
-      <string>synchronizatorAtaków</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="kalkulatorKontryTab">
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <attribute name="title">
-      <string>kalkulatorKontry</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="pomocnikRektrutantaTab">
-     <attribute name="title">
-      <string>pomocnikRektrutanta</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="kalkulatorZagrodyTab">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <attribute name="title">
-      <string>kalkulatorZagrody</string>
-     </attribute>
-     <widget class="QLabel" name="textBudynki">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>20</y>
-        <width>340</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Budynki</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="textWojska">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>20</y>
-        <width>340</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Wojska</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Ratusz">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>70</y>
-        <width>41</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>30</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgRatusz">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>75</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/main.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgKoszary">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>110</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/barracks.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Koszary">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>105</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>25</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgStajnia">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>145</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/stable.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Stajnia">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>140</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>20</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgWarsztat">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>185</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/garage.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Warsztat">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>180</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>15</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgPalac">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>225</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/snob.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Palac">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>220</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>3</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgTartak">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>225</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/wood.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgKuznia">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>75</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/smith.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Kuznia">
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>70</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>20</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgRynek">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>185</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/market.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Plac">
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>105</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>1</number>
-      </property>
-      <property name="value">
-       <number>1</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgPlac">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>110</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/place.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Piedastal">
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>140</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>1</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Rynek">
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>180</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>25</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Tartak">
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>220</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>30</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Cegielnia">
-      <property name="geometry">
-       <rect>
-        <x>271</x>
-        <y>70</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>30</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgPiedestal">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>145</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/statue.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgHuta">
-      <property name="geometry">
-       <rect>
-        <x>241</x>
-        <y>110</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/iron.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgZagroda">
-      <property name="geometry">
-       <rect>
-        <x>241</x>
-        <y>145</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/farm.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgSpichlerz">
-      <property name="geometry">
-       <rect>
-        <x>241</x>
-        <y>185</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/storage.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Huta">
-      <property name="geometry">
-       <rect>
-        <x>271</x>
-        <y>105</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>30</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Zagroda">
-      <property name="geometry">
-       <rect>
-        <x>271</x>
-        <y>140</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>30</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Spichlerz">
-      <property name="geometry">
-       <rect>
-        <x>271</x>
-        <y>180</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>30</number>
-      </property>
-      <property name="value">
-       <number>1</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgSchowek">
-      <property name="geometry">
-       <rect>
-        <x>241</x>
-        <y>225</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/hide.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgCegielnia">
-      <property name="geometry">
-       <rect>
-        <x>241</x>
-        <y>75</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/stone.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Schowek">
-      <property name="geometry">
-       <rect>
-        <x>271</x>
-        <y>220</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>10</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgMur">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>265</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/buildings/wall.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Mur">
-      <property name="geometry">
-       <rect>
-        <x>270</x>
-        <y>260</y>
-        <width>40</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>20</number>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="checkBox">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>265</y>
-        <width>141</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>10% Większa Zagroda</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="textPunkty">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>340</y>
-        <width>50</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Punkty:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgPunkty">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>340</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/coinbag_15x15.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="Punkty">
-      <property name="geometry">
-       <rect>
-        <x>195</x>
-        <y>340</y>
-        <width>50</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>21</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgChlop">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>370</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/chlop.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="textZagroda">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>370</y>
-        <width>121</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Zajęte przez budynki:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="ZajetePrzezBudynki">
-      <property name="geometry">
-       <rect>
-        <x>195</x>
-        <y>370</y>
-        <width>50</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>5</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgCK">
-      <property name="geometry">
-       <rect>
-        <x>470</x>
-        <y>185</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/heavy.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Piki">
-      <property name="geometry">
-       <rect>
-        <x>390</x>
-        <y>70</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Miecze">
-      <property name="geometry">
-       <rect>
-        <x>390</x>
-        <y>105</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Topy">
-      <property name="geometry">
-       <rect>
-        <x>390</x>
-        <y>140</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Luki">
-      <property name="geometry">
-       <rect>
-        <x>390</x>
-        <y>180</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Zwiady">
-      <property name="geometry">
-       <rect>
-        <x>500</x>
-        <y>70</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="LK">
-      <property name="geometry">
-       <rect>
-        <x>500</x>
-        <y>105</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="LucznicyK">
-      <property name="geometry">
-       <rect>
-        <x>500</x>
-        <y>140</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="CK">
-      <property name="geometry">
-       <rect>
-        <x>500</x>
-        <y>180</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Tarany">
-      <property name="geometry">
-       <rect>
-        <x>611</x>
-        <y>70</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Katasy">
-      <property name="geometry">
-       <rect>
-        <x>611</x>
-        <y>105</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>50000</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgLucznikK">
-      <property name="geometry">
-       <rect>
-        <x>470</x>
-        <y>145</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/marcher.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgLK">
-      <property name="geometry">
-       <rect>
-        <x>470</x>
-        <y>110</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/light.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgPiki">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>75</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/spear.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgZwiad">
-      <property name="geometry">
-       <rect>
-        <x>470</x>
-        <y>75</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/spy.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgGrubas">
-      <property name="geometry">
-       <rect>
-        <x>581</x>
-        <y>185</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/snob.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Rycek">
-      <property name="geometry">
-       <rect>
-        <x>611</x>
-        <y>140</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>1</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgKatasy">
-      <property name="geometry">
-       <rect>
-        <x>581</x>
-        <y>110</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/catapult.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgTarany">
-      <property name="geometry">
-       <rect>
-        <x>581</x>
-        <y>75</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/ram.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgTopy">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>145</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/axe.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="Grubas">
-      <property name="geometry">
-       <rect>
-        <x>611</x>
-        <y>180</y>
-        <width>60</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="maximum">
-       <number>25</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgMiecze">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>110</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/sword.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgRycek">
-      <property name="geometry">
-       <rect>
-        <x>581</x>
-        <y>145</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/knight.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgLucznik">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>185</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/unit/archer.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgChlop2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>400</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/chlop.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="ZajetePrzezWojsko">
-      <property name="geometry">
-       <rect>
-        <x>195</x>
-        <y>400</y>
-        <width>50</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="textZajetePrzezWojsko">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>400</y>
-        <width>121</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Zajęte przez wojsko:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="stringZagrodaBilans">
-      <property name="geometry">
-       <rect>
-        <x>477</x>
-        <y>320</y>
-        <width>201</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-       </font>
-      </property>
-      <property name="text">
-       <string>5/240</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgZagrodaBig">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>320</y>
-        <width>151</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/farm.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="textKoszt">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>226</y>
-        <width>41</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Koszt:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgWood">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>225</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/resources/wood.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgClay">
-      <property name="geometry">
-       <rect>
-        <x>493</x>
-        <y>225</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/resources/clay.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgIron">
-      <property name="geometry">
-       <rect>
-        <x>580</x>
-        <y>223</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/resources/iron.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="Clay">
-      <property name="geometry">
-       <rect>
-        <x>512</x>
-        <y>226</y>
-        <width>66</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="Iron">
-      <property name="geometry">
-       <rect>
-        <x>600</x>
-        <y>226</y>
-        <width>71</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="Wood">
-      <property name="geometry">
-       <rect>
-        <x>429</x>
-        <y>226</y>
-        <width>61</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="Atak">
-      <property name="geometry">
-       <rect>
-        <x>375</x>
-        <y>267</y>
-        <width>60</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgAtak">
-      <property name="geometry">
-       <rect>
-        <x>355</x>
-        <y>267</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="mouseTracking">
-       <bool>true</bool>
-      </property>
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="statusTip">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/attack/att.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgObrona">
-      <property name="geometry">
-       <rect>
-        <x>435</x>
-        <y>267</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/attack/def.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgObronaKaw">
-      <property name="geometry">
-       <rect>
-        <x>515</x>
-        <y>267</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/attack/def_cav.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="imgObronaLuk">
-      <property name="geometry">
-       <rect>
-        <x>595</x>
-        <y>267</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>images/attack/def_archer.png</pixmap>
-      </property>
-     </widget>
-     <widget class="QLabel" name="Obrona">
-      <property name="geometry">
-       <rect>
-        <x>455</x>
-        <y>267</y>
-        <width>60</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="ObronaKaw">
-      <property name="geometry">
-       <rect>
-        <x>535</x>
-        <y>267</y>
-        <width>60</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="ObronaLuk">
-      <property name="geometry">
-       <rect>
-        <x>615</x>
-        <y>267</y>
-        <width>60</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="buttonMaxValue">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>294</y>
-        <width>101</width>
-        <height>27</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Max. Wartości</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="buttonClearBud">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>294</y>
-        <width>80</width>
-        <height>27</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Wyczyść</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="buttonClearWojo">
-      <property name="geometry">
-       <rect>
-        <x>590</x>
-        <y>294</y>
-        <width>81</width>
-        <height>27</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Wyczyść</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboItems">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>294</y>
-        <width>231</width>
-        <height>27</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>Nie ma żadnego przedmiotu</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Halabarda szwajcarska</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Długi miecz Urlicha</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Wojowniczy topór Thorgarda</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Wielki łuk Edwarda</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Luneta Kalida</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Lanca Mieszka</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Flaga Baptysty</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Łuk reflekcyjny Khana</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Wekiera Carlosa</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Ogień olimpijski</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Berło Vasca</string>
-       </property>
-      </item>
-     </widget>
-    </widget>
+    <property name="text">
+     <string>Koszt:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Katasy">
+    <property name="geometry">
+     <rect>
+      <x>611</x>
+      <y>108</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="LucznicyK">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>143</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ZajetePrzezBudynki">
+    <property name="geometry">
+     <rect>
+      <x>195</x>
+      <y>373</y>
+      <width>50</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Miecze">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>108</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ObronaKaw">
+    <property name="geometry">
+     <rect>
+      <x>535</x>
+      <y>270</y>
+      <width>60</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Tartak">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>223</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgStajnia">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>148</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/stable.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Clay">
+    <property name="geometry">
+     <rect>
+      <x>512</x>
+      <y>229</y>
+      <width>66</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgGrubas">
+    <property name="geometry">
+     <rect>
+      <x>581</x>
+      <y>188</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/snob.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgClay">
+    <property name="geometry">
+     <rect>
+      <x>493</x>
+      <y>228</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/resources/clay.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgRycek">
+    <property name="geometry">
+     <rect>
+      <x>581</x>
+      <y>148</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/knight.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgRynek">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>188</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/market.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="LK">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>108</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgPlac">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>113</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/place.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Plac">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>108</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="stringZagrodaBilans">
+    <property name="geometry">
+     <rect>
+      <x>477</x>
+      <y>323</y>
+      <width>201</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>5/240</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgPalac">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>228</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/snob.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Rynek">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>183</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>25</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgWood">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>228</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/resources/wood.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Iron">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>229</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgKoszary">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>113</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/barracks.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgPunkty">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>343</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/coinbag_15x15.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Piki">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>73</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgCegielnia">
+    <property name="geometry">
+     <rect>
+      <x>241</x>
+      <y>78</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/stone.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgObronaLuk">
+    <property name="geometry">
+     <rect>
+      <x>595</x>
+      <y>270</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/attack/def_archer.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgZwiad">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>78</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/spy.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgLK">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>113</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/light.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Topy">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>143</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgTopy">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>148</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/unit/axe.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonMaxValue">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>297</y>
+      <width>101</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Max. Wartości</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Zwiady">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>73</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgObrona">
+    <property name="geometry">
+     <rect>
+      <x>435</x>
+      <y>270</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/attack/def.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonClearBud">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>297</y>
+      <width>80</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wyczyść</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Warsztat">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>183</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>15</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgSchowek">
+    <property name="geometry">
+     <rect>
+      <x>241</x>
+      <y>228</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/buildings/hide.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Koszary">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>108</y>
+      <width>40</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>25</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="textBudynki">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>23</y>
+      <width>340</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Budynki</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgIron">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>226</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/resources/iron.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Atak">
+    <property name="geometry">
+     <rect>
+      <x>375</x>
+      <y>270</y>
+      <width>60</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgObronaKaw">
+    <property name="geometry">
+     <rect>
+      <x>515</x>
+      <y>270</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/attack/def_cav.png</pixmap>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -1518,55 +1480,13 @@
      <height>23</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuMenu">
-    <property name="title">
-     <string>Menu</string>
-    </property>
-    <addaction name="actionKonfiguracja"/>
-    <addaction name="separator"/>
-    <addaction name="separator"/>
-    <addaction name="separator"/>
-    <addaction name="separator"/>
-    <addaction name="actionZakoncz"/>
-   </widget>
    <widget class="QMenu" name="menuPomoc">
     <property name="title">
      <string>Pomoc</string>
     </property>
     <addaction name="actionAutorzy_2"/>
-    <addaction name="actionStrona_WWW_2"/>
-    <addaction name="actionWspom_Projekt"/>
    </widget>
-   <addaction name="menuMenu"/>
    <addaction name="menuPomoc"/>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::WheelFocus</enum>
-   </property>
-   <property name="contextMenuPolicy">
-    <enum>Qt::NoContextMenu</enum>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="floatable">
-    <bool>false</bool>
-   </property>
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar">
-   <property name="sizeGripEnabled">
-    <bool>false</bool>
-   </property>
   </widget>
   <action name="actionZakoncz">
    <property name="icon">
